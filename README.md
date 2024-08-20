@@ -14,7 +14,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm test`
 
-Launches the tests.
+Launches the unit tests.
 
 # About project
 
@@ -24,7 +24,7 @@ The AoE Project is structured using the Atomic Design methodology, which breaks 
 ### Atoms
 Atoms are the basic building blocks of the UI, providing fundamental UI elements. In the AoE Project, atoms include:
 
-**Button**: A versatile button component used across the application for various actions. It is styled according to the design system and supports different variants, sizes, and states.<br/>
+**Button**: A versatile button component used across the application for various actions. It is styled according to the design system and supports different variants, sizes, and states. <br/>
 **Input**: A fundamental text input component designed to be flexible for various forms and data entry needs. It supports validation, different input types, and integrates with form handling.<br/>
 **Card**: Gives the basic structure for a card with a border that accepts children.<br/>
 
@@ -36,16 +36,15 @@ Molecules are combinations of atoms that form more complex UI elements. They inc
 ### Organisms
 Organisms are more complex components that combine multiple molecules and atoms to form functional sections of the application. They include:<br/>
 
-**PlayerDetail**: Displays detailed information about a selected player. This component integrates the Card component, form elements, and action buttons (e.g., submit and close). It is designed to handle user interactions and submit data using Axios for API communication.<br/>
-**PlayerGrid**: Manages a grid of player cards, allowing users to view and select different players. It handles layout, interaction, and state management for displaying and selecting players.<br/>
 **Header**: Contains a dropdown element to chose the sort order of the cards<br/>
-***these are the three main components listed in the test pdf***
 
 ### Pages
 Pages combine organisms and other components to create full-page layouts:<br/>
 
-**Home**: Integrates PlayerGrid and PlayerDetail to provide an overview of players and detailed information for selected players. It demonstrates how the application’s main features work together.
-
+**Player**: Integrates PlayerGrid and PlayerDetail to provide an overview of players and detailed information for selected players. It demonstrates how the application’s main features work together.<br/>
+Player has two components:<br/>
+  - **PlayerDetail**: Displays detailed information about a selected player. This component integrates the Card component, form elements, and action buttons (e.g., submit and close).<br/>
+  - **PlayerGrid**: Manages a grid of player cards, allowing users to view and select different players. It handles layout, interaction, and state management for displaying and selecting players.<br/>
 ### Setup for Scalability
 The AoE Project is designed with future growth in mind:<br/>
 
@@ -57,8 +56,7 @@ The AoE Project is designed with future growth in mind:<br/>
 By leveraging Atomic Design principles and preparing for future scalability, the AoE Project is well-equipped to grow and adapt as new features and requirements emerge. The modular and flexible component structure ensures that the application remains maintainable and extensible over time.<br/>
 
 
-***NOTE: Since I wanted to add images in the data and ids, I decided to give my own data.
-I wanted longer descriptions to show case the ... in the cards
+***NOTE: I wanted it to be a masonry layout so i add images. and added more text to the asset so we can see the ... in the cards
 I assumed this is okay since the project does not require any kind of focus on Backend.
 From the test pdf, i went with a combination of both focus points. this is a combination of More Frontend less Javascript and More Javascript less Frontend
 as I have improved the design keeping UX and UI in mind, while maintaining a scalable and flexible structure for the code.***
