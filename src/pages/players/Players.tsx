@@ -1,6 +1,6 @@
 import React from 'react';
 import PlayerGrid from './components/playerGrid/PlayerGrid';
-import Header from 'components/organisms/Header/Header';
+import PlayerSorting from './components/playerSorting/PlayerSorting';
 import PlayerDetail from './components/playerDetail/PlayerDetail';
 import { usePlayerStore } from 'store/playerStore';
 
@@ -12,7 +12,9 @@ const Players: React.FC = () => {
 
     return (
         <div data-testid="players-page" className={styles.container}>
-            <Header />
+            <div className={styles.sortingContent}>
+                <PlayerSorting />
+            </div>
             <div className={styles.mainContent}>
                 <div className={`${styles.playerGrid} ${selectedPlayer ? styles.playerGridShrunk : ''}`} data-testid="player-grid">
                     <PlayerGrid />

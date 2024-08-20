@@ -4,9 +4,10 @@ import { theme } from 'theme/theme';
 export const styles = {
     headerBox: css`
         background-color: ${theme.colors.primary.main};
+        color: ${theme.colors.white};
         padding: ${theme.spacing(2)};
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
         align-items: center;
         border-radius: ${theme.shape.borderRadius * 2}px;
         height: 50px;

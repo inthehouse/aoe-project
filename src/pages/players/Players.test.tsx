@@ -49,19 +49,6 @@ describe('Players Component', () => {
         ]);
     });
 
-    test('renders header', async () => {
-        await act(async () => {
-            render(
-                <QueryClientProvider client={queryClient}>
-                    <Players />
-                </QueryClientProvider>
-            );
-        });
-
-        // Adjust the query to match the actual test ID or role used in Header component
-        expect(screen.getByTestId('header')).toBeInTheDocument();
-    });
-
     test('displays player grid with mock players', async () => {
         await act(async () => {
             render(
@@ -72,7 +59,6 @@ describe('Players Component', () => {
         });
 
         await waitFor(() => {
-            // Adjust the test ID or role based on your PlayerGrid component's implementation
             expect(screen.getByTestId('player-grid')).toBeInTheDocument();
             expect(screen.getByText('Alice')).toBeInTheDocument();
             expect(screen.getByText('Bob')).toBeInTheDocument();
@@ -106,5 +92,15 @@ describe('Players Component', () => {
         });
 
         expect(screen.getByText('joyboy')).toBeInTheDocument();
+    });
+
+    test('renders PlayerSorting component ', () => {
+        render(
+            <QueryClientProvider client={queryClient}>
+                <Players />
+            </QueryClientProvider>
+        );
+
+        expect(screen.getByTestId('sorting-select')).toBeInTheDocument();
     });
 });

@@ -44,4 +44,7 @@ export const styles = {
         transform: translateX(100%);
         pointer-events: none;
     `,
+    sortingContent: css`
+       text-align: right
+    `,
 };
