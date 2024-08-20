@@ -22,11 +22,13 @@ Launches the unit tests.
 The AoE Project is structured using the Atomic Design methodology, which breaks down the UI into hierarchical levels of components to enhance reusability, maintainability, and consistency. The project is designed with scalability in mind, allowing for easy expansion and adaptation as new features are added. Here’s a detailed look at the components and the setup that supports future growth:<br/>
 
 ### Atoms
-Atoms are the basic building blocks of the UI, providing fundamental UI elements. In the AoE Project, atoms include:
+Atoms are the basic building blocks of the UI, providing fundamental UI elements. All atoms have the possiblity to have different versions with different styles if needed in the future. <br/>
+In the AoE Project, atoms include:
 
 **Button**: A versatile button component used across the application for various actions. It is styled according to the design system and supports different variants, sizes, and states. <br/>
 **Input**: A fundamental text input component designed to be flexible for various forms and data entry needs. It supports validation, different input types, and integrates with form handling.<br/>
 **Card**: Gives the basic structure for a card with a border that accepts children.<br/>
+**Select**: Gives the basic structure for a select.<br/>
 
 ### Molecules
 Molecules are combinations of atoms that form more complex UI elements. They include:<br/>
