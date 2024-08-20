@@ -38,7 +38,7 @@ Molecules are combinations of atoms that form more complex UI elements. They inc
 ### Organisms
 Organisms are more complex components that combine multiple molecules and atoms to form functional sections of the application. They include:<br/>
 
-**Header**: Contains a dropdown element to chose the sort order of the cards<br/>
+**Header**: A header bar that for now only has text, but can hold links and buttons in the future.<br/>
 
 ### Pages
 Pages combine organisms and other components to create full-page layouts:<br/>
@@ -47,6 +47,8 @@ Pages combine organisms and other components to create full-page layouts:<br/>
 Player has two components:<br/>
   - **PlayerDetail**: Displays detailed information about a selected player. This component integrates the Card component, form elements, and action buttons (e.g., submit and close).<br/>
   - **PlayerGrid**: Manages a grid of player cards, allowing users to view and select different players. It handles layout, interaction, and state management for displaying and selecting players.<br/>
+  - **Player Sorting**: It handles the sorting of the cards in the grid.<br/>
+  
 ### Setup for Scalability
 The AoE Project is designed with future growth in mind:<br/>
 
