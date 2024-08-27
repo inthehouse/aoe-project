@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). And was suppoesed to contain base setup for a project that can be further developed. The coding challenge is in the files.
 
 ### Available Scripts
 
